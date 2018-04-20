@@ -32,7 +32,7 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 git@bitbucket.org:oglop/tomato-arm-kille72.git
+git clone --depth 1 https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
