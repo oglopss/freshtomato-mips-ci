@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+# export PATH=$PATH:/opt/brcm/hndtools-mipsel-linux/bin:/opt/brcm/hndtools-mipsel-uclibc/bin
+
+export BROADCOM_SDK=src-rt-6.x.4708
+
 
 export PATH=$PATH:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin
 
