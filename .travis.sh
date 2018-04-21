@@ -42,7 +42,7 @@ git clone --depth 1 https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
 # git clone --depth 1 -b v140 https://github.com/oglops/tomato-gui.git
 
 # sudo ln -s ~/tomato-arm-kille72/tools/brcm /opt/brcm
-sudo ln -s ~/tomato-arm-kille72/tools/brcm/release/src-rt-6.x.4708/toolchains /opt/brcm
+sudo ln -s ~/tomato-arm-kille72/release/src-rt-6.x.4708/toolchains /opt/brcm
 
 # rsync -rpv --ignore-times  ./tomato-gui/*  ./tomato/release/src-rt/router/www/  --exclude .git
 
