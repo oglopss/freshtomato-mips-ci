@@ -276,7 +276,7 @@ build_tomato()
     #     git show 46f7c5f0da4204eb61ff5108c7dd7a835df39576 | git apply -R
     # fi
    
-    cd ~/tomato-arm-kille72-arm-kille72/release/$BROADCOM_SDK
+    cd ~/tomato-arm-kille72/release/$BROADCOM_SDK
 
     # make V1=RT-N5x-CN- V2=-140 r2z &
     if [ "$TT_BUILD" == "r2q3m" ] || [ "$TT_BUILD" == "r2q3v" ] ; then
