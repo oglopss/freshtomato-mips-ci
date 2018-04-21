@@ -227,6 +227,11 @@ ls /usr/share/aclocal
 
 # sudo ln -sT /usr/share/aclocal  /usr/local/share/aclocal-
 
+
+# freshTomato specific
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install libelf1:i386 libelf-dev:i386 
 }
 
 build_tomato()
