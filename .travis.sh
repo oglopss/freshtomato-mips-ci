@@ -222,6 +222,8 @@ CC= arm-brcm-linux-uclibcgnueabi-gcc CXX= arm-brcm-linux-uclibcgnueabi-g++ AR= a
 make
 sudo  make install
 
+echo ========== pkg-config --exists uuid again ==========
+pkg-config pkg-config --exists uuid && echo 1
 
 
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
