@@ -35,7 +35,7 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
+git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
@@ -211,6 +211,17 @@ head -200 /usr/include/ncurses.h
 # ii  libtool                             2.4.2-1ubuntu1                                      Generic library support script
 
 
+cd ~
+wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
+tar xf libuuid-1.0.3.tar.gz
+cd libuuid-1.0.3
+# sh configure --prefix /usr
+CC= arm-brcm-linux-uclibcgnueabi-gcc CXX= arm-brcm-linux-uclibcgnueabi-g++ AR= arm-brcm-linux-uclibcgnueabi-ar RANLIB= arm-brcm-linux-uclibcgnueabi-ranlib ./configure --host= arm-brcm-linux-uclibcgnueabi --prefix=$HOME/uuid-install
+
+# CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
+make
+sudo  make install
+
 
 
 # echo /usr/share/aclocal | sudo tee --append /usr/local/share/aclocal/dirlist
@@ -229,11 +240,11 @@ ls /usr/share/aclocal
 
 
 # freshTomato specific
-sudo apt-get install autoconf m4 bison flex g++ libtool sqlite gcc binutils patch bzip2 make gettext unzip zlib1g-dev libc6 gperf automake groff
-sudo apt-get install lib32stdc++6 libncurses5 libncurses5-dev gawk gitk zlib1g-dev autopoint shtool autogen mtd-utils gcc-multilib gconf-editor lib32z1-dev pkg-config libssl-dev automake1.11
-sudo apt-get install libxml2-dev intltool libglib2.0-dev libstdc++5 texinfo dos2unix xsltproc libnfnetlink0 libcurl4-openssl-dev libgtk2.0-dev libnotify-dev libevent-dev mc git
-sudo apt-get install re2c texlive libelf1
-sudo apt-get install linux-headers-uname -r
+# sudo apt-get install autoconf m4 bison flex g++ libtool sqlite gcc binutils patch bzip2 make gettext unzip zlib1g-dev libc6 gperf automake groff
+# sudo apt-get install lib32stdc++6 libncurses5 libncurses5-dev gawk gitk zlib1g-dev autopoint shtool autogen mtd-utils gcc-multilib gconf-editor lib32z1-dev pkg-config libssl-dev automake1.11
+# sudo apt-get install libxml2-dev intltool libglib2.0-dev libstdc++5 texinfo dos2unix xsltproc libnfnetlink0 libcurl4-openssl-dev libgtk2.0-dev libnotify-dev libevent-dev mc git
+# sudo apt-get install re2c texlive libelf1
+# sudo apt-get install linux-headers-uname -r
 
 
 
