@@ -58,6 +58,7 @@ addons:
             - lib32z1-dev
             # - gconf
             # - pkg-config
+            - uuid-dev
 
 # Handle git submodules yourself
 git:
@@ -83,7 +84,7 @@ env:
         # - BROADCOM_SDK=6
 
         - TT_BUILD=ac68e
-        - TT_BUILD=ac68z
+        # - TT_BUILD=ac68z
         # - TT_BUILD=r2c BROADCOM_SDK=src-rt
         # - TT_BUILD=r2d BROADCOM_SDK=src-rt
         # - TT_BUILD=r2g BROADCOM_SDK=src-rt
