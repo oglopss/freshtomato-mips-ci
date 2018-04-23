@@ -60,6 +60,9 @@ addons:
             # - pkg-config
             # - uuid-dev
 
+            - libelf1:i386
+            - libltdl-dev
+
 # Handle git submodules yourself
 git:
     submodules: false
