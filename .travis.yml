@@ -164,7 +164,7 @@ env:
 
 
     global:
-        - secure: cc0rXvtZbBOTIoLZ8y3yb0OL/QX6TEuihW0Sodu7G3KySs83EgwYtPnqy4ELoTxhoCFISiAYv2eSu5Hqet0KwlZriwywtM6Dqmo2GqepQGCKSpMKYb4DE956PC13ccK2SDfAGMJN6sun70jK+TWXpy5GGjhHtRZcSnKB/VvoM98/5A4aqdeXFXPt+i10mXqt/IuPjYkwE5dfRUYa3b3ypSskGA2jmf2623IvwKxIjd7T9hrYvpqXwKYyedCrWo+ytyswxPG75WDUxPDlceEKH8v/tIjJv+jdtzaILUt4SPEOSDC3XagIVQnC/EoOKwu4EmhDbfWkEbzF/pRMyO2sMmvsjxLupCbryMV8ug5A/i5N6YVHQ8aXvEa9sm57RTwh3s9S3gavSdidIYuaTefEhqx+Jrw8VQsVMWImWxq/RpbIWeCfA0Ff/DYo6f6gnFEX/f8wtYn8DrOiM1RKqXJrQCyZ4A40tEr1GdX2R9cz2eC0ub0ZVA6yNdaxF/4dkfvkhAjYbuCTnqtmft9GYDL9KYW+fGlKCdyOl9eN+V9DWqc60nSjx0GuLVBZ82pcnWYi6YcC4N70imwcHisMcyDlCqY3Mmh3gJy/cw4QmD4Ix8L1lYiZ43dV/ECVfCjZBIe5vdhMa29nvjc1IBtT5xnSDPGgQJUdjIJY3Ejd2FtTHfc=
+        - secure: GqlmfhuWWdfnNxIJLh4SgbxICjiSQ0pfjiTdZah8QAT5dYIWRK/RGWILQUx6J78qTyCFiylN+U1+nhQi+80snp3XREl8t0OvDgo2jdYYDV9ftJELV1DuBSHa6umd2/yxZRHwCuvDD/mgDFhLcDH6AtcGgW20ed16UJBRPc4CJcL/qqHcV4mr8ajLfaJDrvsgrlcADYZ8jZ2lqigRKzIyLzqq+mKKFNnHplpa+wnPuxxwksPSNX1K+6m3L/FVOhtjt4iUvjyVP3VL4alTEyNdloZBqIzJwRGuBH7aCGPLBIRAoILiTVHTdVc9TTu82YDc96juMDG1oqRqlHDc4urucRTe0KR5pdUFGlHqSzM2KPL4S1WB90WNDj6L6JH9fynwET5Qh1l8OLjFVFqDHcRANcxlRPB4MCgIXQW24klHqsM0u7SNloVSF0DpijUOMw0lSp0M2dBiBPuen14cIdcT6lkxKLPARetEc6YCtdF/SQW5uCrDUX2FtyUdgp45ZANcAdC2xP7ViS9W53gM9hS6lcN3LsCLkzTv6p6GGR0Vyc/5lFrtWTufrGYvLTHJ7InspT7wJLTvuvJ5nltqsRVPKtZob7/lRizI6adCECXpcTggoJpIdgeDusw9e1HSHui9LYQoMWjrxd6BFeZDUXp/3KL2iVPsb7k+xysjsZRU704=
         
 # Building the standard samples
 script:
@@ -181,4 +181,4 @@ after_failure:
     - tail -n 1000 ~/tomato.txt
     
     
-# after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
+after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
