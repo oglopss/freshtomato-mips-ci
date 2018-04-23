@@ -63,12 +63,12 @@ cd tomato-arm-kille72/release/src-rt-6.x.4708
 
 # is missing on your system
 
-# cd ~
-# wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
-# tar xf automake-1.10.tar.gz
-# cd automake-1.10
-# sh configure --prefix /usr
-# sudo make install
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
+tar xf automake-1.10.tar.gz
+cd automake-1.10
+sh configure --prefix /usr
+sudo make install
 
 # cd ~
 # wget http://ftp.gnu.org/gnu/automake/automake-1.12.tar.gz
