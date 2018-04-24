@@ -163,7 +163,7 @@ sudo  make install
 cd ~
 wget http://gnu.mirror.globo.tech/libtool/libtool-2.2.6a.tar.gz
 tar xvf libtool-2.2.6a.tar.gz
-cd libtool-2.2.6a
+cd libtool-2.2.6
 sh configure --prefix=/usr
 make
 sudo  make install
