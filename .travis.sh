@@ -151,13 +151,23 @@ sudo  make install
 # sudo  make install
 
 
+# cd ~
+# wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
+# tar xvf libtool-2.4.6.tar.gz
+# cd libtool-2.4.6
+# sh configure --prefix=/usr
+# make
+# sudo  make install
+
+
 cd ~
-wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.6.tar.gz
-tar xvf libtool-2.4.6.tar.gz
-cd libtool-2.4.6
+wget http://gnu.mirror.globo.tech/libtool/libtool-2.2.6b.tar.gz
+tar xvf libtool-2.2.6b.tar.gz
+cd libtool-2.2.6b
 sh configure --prefix=/usr
 make
 sudo  make install
+
 
 # sudo apt-get purge libncurses5 libncurses5-dev libncursesw5 libncursesw5-dev
 
