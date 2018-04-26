@@ -258,6 +258,7 @@ sudo apt-get install libxml2-dev intltool libglib2.0-dev libstdc++5 texinfo dos2
 sudo apt-get install re2c texlive libelf1
 sudo apt-get install linux-headers-uname -r
 
+sudo apt-get remove libicu-dev
 
 
 sudo dpkg --add-architecture i386
