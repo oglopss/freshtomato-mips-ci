@@ -65,6 +65,7 @@ addons:
             - libltdl-dev
             - lzma-dev
             - lzma
+            - liblzma-dev
 
 # Handle git submodules yourself
 git:

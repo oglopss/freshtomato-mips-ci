@@ -4,7 +4,7 @@
 # export BROADCOM_SDK=src-rt-6.x.4708
 
 
-export PATH=$PATH:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin
+export PATH=$PATH:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin:/sbin
 
 echo ========== custom path ============
 echo $PATH
