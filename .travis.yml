@@ -63,7 +63,7 @@ addons:
 
             - libelf1:i386
             - libltdl-dev
-            # - lzma-dev
+            - lzma-dev
             # - lzma
             - liblzma-dev
             # - liblzma5
