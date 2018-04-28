@@ -270,7 +270,7 @@ sudo apt-get install linux-headers-uname -r
 sudo apt-get remove libicu-dev
 
 # https://bitbucket.org/kille72/tomato-arm-kille72/pull-requests/8/fix-tor-build-on-some-systems/diff
-sudo apt-get remove xz-utils
+sudo apt-get remove xz-utils liblzma-dev liblzma5 xz-lzma lzma lzma-dev
 # http://www.nokogiri.org/tutorials/installing_nokogiri.html#mac_os_x
 
 
