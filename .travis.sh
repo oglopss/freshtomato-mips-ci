@@ -184,6 +184,15 @@ sudo rm -rf /usr/include/ncursesw
 # make
 # sudo  make install
 
+
+cd ~
+wget https://downloads.sourceforge.net/project/lzmautils/xz-5.2.3.tar.gz
+tar xvf xz-5.2.3.tar.gz
+cd xz-5.2.3
+sh configure --prefix=/usr
+make
+sudo  make install
+
 # try same version in local travis
 
 echo =========== autotools versions ===========
@@ -260,6 +269,9 @@ sudo apt-get install linux-headers-uname -r
 
 sudo apt-get remove libicu-dev
 
+# http://www.nokogiri.org/tutorials/installing_nokogiri.html#mac_os_x
+
+
 
 sudo dpkg --add-architecture i386
 sudo apt-get update
@@ -324,7 +336,7 @@ build_tomato()
     elif [ "$TT_BUILD" == "hg32064k" ] || [ "$TT_BUILD" == "hg32032k" ]; then
         make V1=RT-N5x-CN- V2=-140-hg320  $TT_BUILD > /dev/null &
     else
-        make V1=RT-N5x-CN- V2=-140 $TT_BUILD #> /dev/null  &
+        make V1=RT-N5x-CN- V2=-140 $TT_BUILD > /dev/null  &
     fi
     
     local build_pid=$!

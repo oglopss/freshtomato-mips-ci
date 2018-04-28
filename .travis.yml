@@ -63,10 +63,11 @@ addons:
 
             - libelf1:i386
             - libltdl-dev
-            - lzma-dev
-            - lzma
-            - liblzma-dev
-            - liblzma5
+            
+            # - lzma-dev
+            # - lzma
+            # - liblzma-dev
+            # - liblzma5
 
 # Handle git submodules yourself
 git:
