@@ -185,13 +185,13 @@ sudo rm -rf /usr/include/ncursesw
 # sudo  make install
 
 
-cd ~
-wget https://downloads.sourceforge.net/project/lzmautils/xz-5.2.3.tar.gz
-tar xvf xz-5.2.3.tar.gz
-cd xz-5.2.3
-sh configure --prefix=/usr
-make
-sudo  make install
+# cd ~
+# wget https://downloads.sourceforge.net/project/lzmautils/xz-5.2.3.tar.gz
+# tar xvf xz-5.2.3.tar.gz
+# cd xz-5.2.3
+# sh configure --prefix=/usr
+# make
+# sudo  make install
 
 # try same version in local travis
 
@@ -269,6 +269,8 @@ sudo apt-get install linux-headers-uname -r
 
 sudo apt-get remove libicu-dev
 
+# https://bitbucket.org/kille72/tomato-arm-kille72/pull-requests/8/fix-tor-build-on-some-systems/diff
+sudo apt-get remove xz-utils
 # http://www.nokogiri.org/tutorials/installing_nokogiri.html#mac_os_x
 
 
