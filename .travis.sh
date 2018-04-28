@@ -275,7 +275,7 @@ echo ========= installed before ========
 apt list --installed
 echo ========= installed before *** ========
 
-sudo apt-get remove xz-utils liblzma-dev liblzma5 xz-lzma lzma lzma-dev
+# sudo apt-get remove xz-utils liblzma-dev liblzma5 xz-lzma lzma lzma-dev
 # http://www.nokogiri.org/tutorials/installing_nokogiri.html#mac_os_x
 
 
