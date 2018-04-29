@@ -231,7 +231,9 @@ head -200 /usr/include/ncurses.h
 
 
 cd ~
-wget https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
+# wget --no-check-certificate https://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
+
+wget http://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
 tar xf libuuid-1.0.3.tar.gz
 cd libuuid-1.0.3
 # sh configure --prefix /usr
