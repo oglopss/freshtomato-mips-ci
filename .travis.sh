@@ -117,6 +117,14 @@ make
 sudo make install
 
 
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.14.1.tar.gz
+tar xf automake-1.14.1.tar.gz
+cd automake-1.14.1
+sh configure --prefix /usr
+make
+sudo make install
+
 
 # mysql warns for this
 cd ~
