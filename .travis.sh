@@ -6,6 +6,9 @@
 
 export PATH=$PATH:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin:/sbin
 
+# fix c compiler error for uuid
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/lib:/usr/local/lib:/usr/lib
+
 echo ========== custom path ============
 echo $PATH
    
@@ -269,7 +272,7 @@ sudo apt-get install libxml2-dev intltool libglib2.0-dev libstdc++5 texinfo dos2
 sudo apt-get install re2c texlive libelf1
 sudo apt-get install linux-headers-uname -r
 
-sudo apt-get remove libicu-dev uuid-dev
+sudo apt-get remove libicu-dev
 
 # https://bitbucket.org/kille72/tomato-arm-kille72/pull-requests/8/fix-tor-build-on-some-systems/diff
 
