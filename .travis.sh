@@ -42,12 +42,12 @@ git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/tomato-arm-kille
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
-# git clone --depth 1 -b v140 https://github.com/oglops/tomato-gui.git
+git clone --depth 1 -b v2018.2 https://github.com/oglops/freshTomato-gui.git
 
 # sudo ln -s ~/tomato-arm-kille72/tools/brcm /opt/brcm
 sudo ln -s ~/tomato-arm-kille72/release/src-rt-6.x.4708/toolchains /opt/brcm
 
-# rsync -rpv --ignore-times  ./tomato-gui/*  ./tomato/release/src-rt/router/www/  --exclude .git
+rsync -rpv --ignore-times  ./freshTomato-gui/*  ./tomato-arm-kille72/release/src-rt-6.x.4708/router/www/  --exclude .git
 
 echo ========== bison ==========
 apt-cache showpkg bison
