@@ -40,7 +40,8 @@ sudo pip install requests -U
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
 git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
 
-rm ~/tomato-arm-kille72/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
+# on real travis do not run this
+# rm ~/tomato-arm-kille72/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
