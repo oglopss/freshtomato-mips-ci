@@ -115,6 +115,12 @@ env:
         - TT_BUILD=ea6700e  BROADCOM_SDK=src-rt-6.x.4708
         - TT_BUILD=ea6700z  BROADCOM_SDK=src-rt-6.x.4708
 
+        - TT_BUILD=ac3200e BROADCOM_SDK=src-rt-7.x.main/src
+        - TT_BUILD=ac3200z BROADCOM_SDK=src-rt-7.x.main/src
+        - TT_BUILD=r8000e BROADCOM_SDK=src-rt-7.x.main/src
+        - TT_BUILD=r8000z BROADCOM_SDK=src-rt-7.x.main/src
+
+
         # # include:
         # #     - BROADCOM_SDK=6
         # - TT_BUILD=r64e BROADCOM_SDK=src-rt-6.x

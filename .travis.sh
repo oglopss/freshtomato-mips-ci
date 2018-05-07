@@ -40,16 +40,16 @@ sudo pip install requests -U
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
 git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
 
-rm ~/tomato-arm-kille72/release/src-rt-6.x.4708/router/patches/mysql/202-fix-cross-compiling2.patch
+rm ~/tomato-arm-kille72/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
 git clone --depth 1 -b v2018.2 https://github.com/oglops/freshTomato-gui.git
 
 # sudo ln -s ~/tomato-arm-kille72/tools/brcm /opt/brcm
-sudo ln -s ~/tomato-arm-kille72/release/src-rt-6.x.4708/toolchains /opt/brcm
+sudo ln -s ~/tomato-arm-kille72/release/$BROADCOM_SDK/toolchains /opt/brcm
 
-rsync -rpv --ignore-times  ./freshTomato-gui/*  ./tomato-arm-kille72/release/src-rt-6.x.4708/router/www/  --exclude .git
+rsync -rpv --ignore-times  ./freshTomato-gui/*  ./tomato-arm-kille72/release/$BROADCOM_SDK/router/www/  --exclude .git
 
 echo ========== bison ==========
 apt-cache showpkg bison
@@ -60,7 +60,7 @@ wget http://launchpadlibrarian.net/140087282/bison_2.7.1.dfsg-1_amd64.deb
 sudo dpkg -i libbison-dev_2.7.1.dfsg-1_amd64.deb
 sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 
-cd tomato-arm-kille72/release/src-rt-6.x.4708
+cd tomato-arm-kille72/release/$BROADCOM_SDK
 
 # echo ========== pastee ==========
 # python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel

@@ -91,7 +91,7 @@ push_changes()
 
   build_token=$TT_BUILD
   
-  if [ "$BROADCOM_SDK" == "src-rt-6.x" ]; then
+  if [ "$BROADCOM_SDK" == "src-rt-6.x.4708" ]; then
     build_token="$TT_BUILD-BCMWL6"
   fi
 
