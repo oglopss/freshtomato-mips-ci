@@ -92,7 +92,9 @@ env:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
         # - BROADCOM_SDK=6
 
-        - TT_BUILD=ac68e  BROADCOM_SDK=src-rt
+        - TT_BUILD=r2e  BROADCOM_SDK=src-rt-6.x
+
+        # - TT_BUILD=ac68e  BROADCOM_SDK=src-rt-6.x
         # - TT_BUILD=ac68z  BROADCOM_SDK=src-rt-6.x.4708
         # - TT_BUILD=n18e  BROADCOM_SDK=src-rt-6.x.4708
         # - TT_BUILD=n18z  BROADCOM_SDK=src-rt-6.x.4708

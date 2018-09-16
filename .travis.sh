@@ -4,10 +4,10 @@
 # export BROADCOM_SDK=src-rt-6.x.4708
 
 
-export PATH=$PATH:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin:/sbin
+export PATH=$PATH:/opt/brcm/hndtools-mipsel-uclibc/bin:/sbin
 
 # fix c compiler error for uuid
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/lib:/usr/local/lib:/usr/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/brcm/hndtools-mipsel-uclibc/lib:/usr/local/lib:/usr/lib
 
 echo ========== custom path ============
 echo $PATH
@@ -48,7 +48,7 @@ git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips
 git clone --depth 1 -b v2018.2 https://github.com/oglops/freshTomato-gui.git
 
 # sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
-sudo ln -s ~/freshtomato-mips/release/$BROADCOM_SDK/toolchains /opt/brcm
+sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 
 # rsync -rpv --ignore-times  ./freshTomato-gui/*  ./freshtomato-mips/release/$BROADCOM_SDK/router/www/  --exclude .git
 
