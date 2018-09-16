@@ -38,19 +38,19 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/tomato-arm-kille72.git
+git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips.git
 
 # on real travis do not run this
-# rm ~/tomato-arm-kille72/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
+# rm ~/freshtomato-mips/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
 git clone --depth 1 -b v2018.2 https://github.com/oglops/freshTomato-gui.git
 
-# sudo ln -s ~/tomato-arm-kille72/tools/brcm /opt/brcm
-sudo ln -s ~/tomato-arm-kille72/release/$BROADCOM_SDK/toolchains /opt/brcm
+# sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
+sudo ln -s ~/freshtomato-mips/release/$BROADCOM_SDK/toolchains /opt/brcm
 
-rsync -rpv --ignore-times  ./freshTomato-gui/*  ./tomato-arm-kille72/release/$BROADCOM_SDK/router/www/  --exclude .git
+# rsync -rpv --ignore-times  ./freshTomato-gui/*  ./freshtomato-mips/release/$BROADCOM_SDK/router/www/  --exclude .git
 
 echo ========== bison ==========
 apt-cache showpkg bison
@@ -61,7 +61,7 @@ wget http://launchpadlibrarian.net/140087282/bison_2.7.1.dfsg-1_amd64.deb
 sudo dpkg -i libbison-dev_2.7.1.dfsg-1_amd64.deb
 sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 
-cd tomato-arm-kille72/release/$BROADCOM_SDK
+cd freshtomato-mips/release/$BROADCOM_SDK
 
 # echo ========== pastee ==========
 # python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
@@ -285,7 +285,7 @@ sudo apt-get install linux-headers-uname -r
 
 sudo apt-get remove libicu-dev
 
-# https://bitbucket.org/kille72/tomato-arm-kille72/pull-requests/8/fix-tor-build-on-some-systems/diff
+# https://bitbucket.org/kille72/freshtomato-mips/pull-requests/8/fix-tor-build-on-some-systems/diff
 
 # echo ========= installed before ========
 # apt list --installed
@@ -313,7 +313,7 @@ build_tomato()
     # which cp
 
 
-    # cd ~/tomato-arm-kille72/release/src-rt
+    # cd ~/freshtomato-mips/release/src-rt
 
     # echo ======before=========
     # pwd
@@ -346,17 +346,17 @@ build_tomato()
 
     # apply patch in https://github.com/tomatofirmware/tomato/commit/ce39fb4b4a348773355fc2779505db4c5b28d750
     # if [ "$TT_BUILD" == "rtn53" ] || [ "$TT_BUILD" == "n60" ] || [ "$TT_BUILD" == "n6" ] || [ "$TT_BUILD" == "e2500" ] || [ "$TT_BUILD" == "e3200" ] || [ "$TT_BUILD" == "wndr64" ]; then
-    #     cd ~/tomato-arm-kille72/release/$BROADCOM_SDK/linux
+    #     cd ~/freshtomato-mips/release/$BROADCOM_SDK/linux
     #     patch -R -p4 < fix4usbap.patch
     # fi
 
 
-    # cd ~/tomato-arm-kille72
+    # cd ~/freshtomato-mips
     # if [ "$TT_BUILD" == "wndr64" ] ; then
     #     git show 46f7c5f0da4204eb61ff5108c7dd7a835df39576 | git apply -R
     # fi
    
-    cd ~/tomato-arm-kille72/release/$BROADCOM_SDK
+    cd ~/freshtomato-mips/release/$BROADCOM_SDK
 
     # make V1=RT-N5x-CN- V2=-140 r2z &
     if [ "$TT_BUILD" == "r2q3m" ] || [ "$TT_BUILD" == "r2q3v" ] ; then
@@ -389,10 +389,10 @@ build_tomato()
     wait $runner_pid 2>/dev/null
 
     echo ====== result =========
-   # ls -l ~/tomato-arm-kille72/release/image
-   # ls -l ~/tomato-arm-kille72/release/src-rt
+   # ls -l ~/freshtomato-mips/release/image
+   # ls -l ~/freshtomato-mips/release/src-rt
    
-    ls -l ~/tomato-arm-kille72/release/$BROADCOM_SDK/image
+    ls -l ~/freshtomato-mips/release/$BROADCOM_SDK/image
 
     # Return the result
     # return $result

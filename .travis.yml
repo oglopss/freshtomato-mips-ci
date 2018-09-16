@@ -92,33 +92,33 @@ env:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
         # - BROADCOM_SDK=6
 
-        - TT_BUILD=ac68e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ac68z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=n18e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=n18z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ac15  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=dir868l  BROADCOM_SDK=src-rt-6.x.4708
+        - TT_BUILD=ac68e  BROADCOM_SDK=src-rt
+        # - TT_BUILD=ac68z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=n18e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=n18z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=ac15  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=dir868l  BROADCOM_SDK=src-rt-6.x.4708
 
-        - TT_BUILD=r7000e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r7000z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r6400e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r6400z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r7000init  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r6250init  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r6300v2init  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r6400v2init  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=r1do  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ws880e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ws880z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=wzr1750e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=wzr1750z  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ea6700e  BROADCOM_SDK=src-rt-6.x.4708
-        - TT_BUILD=ea6700z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r7000e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r7000z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r6400e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r6400z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r7000init  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r6250init  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r6300v2init  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r6400v2init  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=r1do  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=ws880e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=ws880z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=wzr1750e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=wzr1750z  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=ea6700e  BROADCOM_SDK=src-rt-6.x.4708
+        # - TT_BUILD=ea6700z  BROADCOM_SDK=src-rt-6.x.4708
 
-        - TT_BUILD=ac3200e BROADCOM_SDK=src-rt-7.x.main/src
-        - TT_BUILD=ac3200z BROADCOM_SDK=src-rt-7.x.main/src
-        - TT_BUILD=r8000e BROADCOM_SDK=src-rt-7.x.main/src
-        - TT_BUILD=r8000z BROADCOM_SDK=src-rt-7.x.main/src
+        # - TT_BUILD=ac3200e BROADCOM_SDK=src-rt-7.x.main/src
+        # - TT_BUILD=ac3200z BROADCOM_SDK=src-rt-7.x.main/src
+        # - TT_BUILD=r8000e BROADCOM_SDK=src-rt-7.x.main/src
+        # - TT_BUILD=r8000z BROADCOM_SDK=src-rt-7.x.main/src
 
 
         # # include:
@@ -158,4 +158,4 @@ after_failure:
     - tail -n 1000 ~/tomato.txt
     
     
-after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
+# after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
