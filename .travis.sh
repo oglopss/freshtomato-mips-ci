@@ -38,14 +38,14 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips.git
+git clone --depth 1 -b 2018.4-real https://oglop@bitbucket.org/oglop/freshtomato-mips.git
 
 # on real travis do not run this
 # rm ~/freshtomato-mips/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b v2018.2 https://github.com/oglops/freshTomato-gui.git
+git clone --depth 1 -b v2018.4 https://github.com/oglops/freshtomato-mips-gui.git
 
 # sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
