@@ -69,6 +69,7 @@ cd freshtomato-mips/release/$BROADCOM_SDK
 # echo ========== pastee ==========
 # python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
 
+chmod 777 $HOME/freshtomato-mips/release/src/router/snmp/configure
 
 # is missing on your system
 
