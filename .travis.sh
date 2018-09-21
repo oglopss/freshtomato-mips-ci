@@ -38,7 +38,10 @@ sudo pip install  urllib3 -U
 sudo pip install requests -U
 
 # git clone --depth 1 -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b 2018.4-real https://oglop@bitbucket.org/oglop/freshtomato-mips.git
+
+# 2018.4-real seems to be mips-RT-AC
+# git clone --depth 1 -b 2018.4-real https://oglop@bitbucket.org/oglop/freshtomato-mips.git
+git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips.git
 
 # on real travis do not run this
 # rm ~/freshtomato-mips/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
