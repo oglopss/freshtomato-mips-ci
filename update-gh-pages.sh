@@ -3,8 +3,8 @@
 # if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
-  echo ======== show ~/tomato-arm-kille72/release/$BROADCOM_SDK/image =======
-  ls -lt ~/tomato-arm-kille72/release/$BROADCOM_SDK/image --block-size=K
+  echo ======== show ~/freshtomato-mips/release/$BROADCOM_SDK/image =======
+  ls -lt ~/freshtomato-mips/release/$BROADCOM_SDK/image --block-size=K
 
   #copy data we're interested in to other place
   # mkdir -p $HOME/coverage
@@ -22,7 +22,7 @@
   sleep $x
   
   #using token clone gh-pages branch
-  git clone --depth 1 --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/oglopss/freshTomato-ARM-ci-jekyll.git  gh-pages-$TT_BUILD > /dev/null
+  git clone --depth 1 --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/oglopss/freshtomato-mips-ci-jekyll.git  gh-pages-$TT_BUILD > /dev/null
 
 
   cd gh-pages-$TT_BUILD
@@ -79,7 +79,7 @@ push_changes()
   mkdir -p download && cd download
 
   # -t makes sure you get the last modified trx, some builds have more than one trx files
-  image=~/tomato-arm-kille72/release/$BROADCOM_SDK/image
+  image=~/freshtomato-mips/release/$BROADCOM_SDK/image
   cd $image
 
   bin=($(ls -1t freshtomato*.bin))

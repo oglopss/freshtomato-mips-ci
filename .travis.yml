@@ -217,4 +217,4 @@ after_failure:
     - tail -n 1000 ~/tomato.txt
 
 
-# after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
+after_success: . $TRAVIS_BUILD_DIR/update-gh-pages.sh
