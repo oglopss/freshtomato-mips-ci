@@ -361,6 +361,9 @@ build_tomato()
     # fi
    
     cd ~/freshtomato-mips/release/$BROADCOM_SDK
+    
+    cp -f router/mysql/configure router/mysql/configure.mipsel
+    chmod 777 router/mysql/configure.mipsel
 
     # make V1=RT-N5x-CN- V2=-140 r2z &
     if [ "$TT_BUILD" == "r2q3m" ] || [ "$TT_BUILD" == "r2q3v" ] ; then
