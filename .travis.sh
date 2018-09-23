@@ -41,7 +41,7 @@ sudo pip install requests -U
 
 # 2018.4-real seems to be mips-RT-AC
 # git clone --depth 1 -b 2018.4-real https://oglop@bitbucket.org/oglop/freshtomato-mips.git
-git clone -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips.git
+git clone --depth 1 -b travis https://oglop@bitbucket.org/oglop/freshtomato-mips.git
 
 # on real travis do not run this
 # rm ~/freshtomato-mips/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
@@ -74,6 +74,15 @@ ls -lrt ./router/mysql/configure
 chmod 777 $HOME/freshtomato-mips/release/src/router/snmp/configure
 
 # is missing on your system
+
+cd ~
+wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
+tar xf automake-1.8.tar.gz
+cd automake-1.8
+sh configure --prefix /usr
+sudo make install
+
+
 
 cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
