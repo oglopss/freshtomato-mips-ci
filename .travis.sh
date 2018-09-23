@@ -76,15 +76,6 @@ chmod 777 $HOME/freshtomato-mips/release/src/router/snmp/configure
 # is missing on your system
 
 cd ~
-wget http://ftp.gnu.org/gnu/automake/automake-1.8.tar.gz
-tar xf automake-1.8.tar.gz
-cd automake-1.8
-sh configure --prefix /usr
-sudo make install
-
-
-
-cd ~
 wget http://ftp.gnu.org/gnu/automake/automake-1.10.tar.gz
 tar xf automake-1.10.tar.gz
 cd automake-1.10
@@ -374,10 +365,11 @@ build_tomato()
     cd ~/freshtomato-mips/release/$BROADCOM_SDK
     
     # cp -f router/mysql/configure router/mysql/configure.mipsel
-    cp -f router/mysql/configure.mipsel router/mysql/configure
-    rm router/mysql/configure.in
+    # cp -f router/mysql/configure.mipsel router/mysql/configure
+    # rm router/mysql/configure.in
+    # try patch
     
-    chmod 777 router/mysql/configure.mipsel
+    # chmod 777 router/mysql/configure.mipsel
 
     # make V1=RT-N5x-CN- V2=-140 r2z &
     if [ "$TT_BUILD" == "r2q3m" ] || [ "$TT_BUILD" == "r2q3v" ] ; then
