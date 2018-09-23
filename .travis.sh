@@ -366,6 +366,7 @@ build_tomato()
     
     # cp -f router/mysql/configure router/mysql/configure.mipsel
     cp -f router/mysql/configure.mipsel router/mysql/configure
+    rm router/mysql/configure.in
     
     chmod 777 router/mysql/configure.mipsel
 
