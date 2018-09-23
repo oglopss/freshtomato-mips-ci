@@ -66,8 +66,9 @@ sudo dpkg -i bison_2.7.1.dfsg-1_amd64.deb
 
 cd freshtomato-mips/release/$BROADCOM_SDK
 
-# echo ========== pastee ==========
+echo ========== pastee ==========
 # python $TRAVIS_BUILD_DIR/pastee.py  ./router/mysql/configure.mipsel
+ls -lrt ./router/mysql/configure.mipsel
 
 chmod 777 $HOME/freshtomato-mips/release/src/router/snmp/configure
 

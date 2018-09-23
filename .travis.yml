@@ -101,44 +101,44 @@ env:
         # - TT_BUILD=r2b       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2o       BROADCOM_SDK=src-rt
         - TT_BUILD=r2z       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2a       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2v       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2m       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2i       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2j       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2f       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2a       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2v       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2m       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2i       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2j       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2f       BROADCOM_SDK=src-rt
 
-        - TT_BUILD=f5d       BROADCOM_SDK=src-rt
-        - TT_BUILD=f7d       BROADCOM_SDK=src-rt
+        # - TT_BUILD=f5d       BROADCOM_SDK=src-rt
+        # - TT_BUILD=f7d       BROADCOM_SDK=src-rt
 
-        - TT_BUILD=e1000v2f BROADCOM_SDK=src-rt
-        - TT_BUILD=e1000v2i  BROADCOM_SDK=src-rt
-        - TT_BUILD=e1200v1f  BROADCOM_SDK=src-rt
-        - TT_BUILD=e1200v1i  BROADCOM_SDK=src-rt
+        # - TT_BUILD=e1000v2f BROADCOM_SDK=src-rt
+        # - TT_BUILD=e1000v2i  BROADCOM_SDK=src-rt
+        # - TT_BUILD=e1200v1f  BROADCOM_SDK=src-rt
+        # - TT_BUILD=e1200v1i  BROADCOM_SDK=src-rt
 
-        - TT_BUILD=n60e     BROADCOM_SDK=src-rt
-        - TT_BUILD=n60c      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60d      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60g      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60t      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60b      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60o      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60z      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60i      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60j      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60v      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60m      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60e     BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60c      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60d      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60g      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60t      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60b      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60o      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60z      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60i      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60j      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60v      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60m      BROADCOM_SDK=src-rt
 
-        - TT_BUILD=n64e     BROADCOM_SDK=src-rt
-        - TT_BUILD=n64c      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64d      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64g      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64u      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64t      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64b      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64o      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64v      BROADCOM_SDK=src-rt
-        - TT_BUILD=n64m      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64e     BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64c      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64d      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64g      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64u      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64t      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64b      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64o      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64v      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n64m      BROADCOM_SDK=src-rt
 
         - TT_BUILD=rtn53    BROADCOM_SDK=src-rt
         - TT_BUILD=f9k       BROADCOM_SDK=src-rt
