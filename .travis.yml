@@ -92,12 +92,12 @@ env:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
         # - BROADCOM_SDK=6
 
-        - TT_BUILD=r2e       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2e       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2c       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2d       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2g       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2u       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2t       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2t       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2b       BROADCOM_SDK=src-rt
         # - TT_BUILD=r2o       BROADCOM_SDK=src-rt
         - TT_BUILD=r2z       BROADCOM_SDK=src-rt
@@ -140,32 +140,32 @@ env:
         # - TT_BUILD=n64v      BROADCOM_SDK=src-rt
         # - TT_BUILD=n64m      BROADCOM_SDK=src-rt
 
-        - TT_BUILD=rtn53    BROADCOM_SDK=src-rt
-        - TT_BUILD=f9k       BROADCOM_SDK=src-rt
-        - TT_BUILD=e2500     BROADCOM_SDK=src-rt
-        - TT_BUILD=e3200     BROADCOM_SDK=src-rt
-        - TT_BUILD=n6        BROADCOM_SDK=src-rt
-        - TT_BUILD=n60       BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr64    BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr64-vpn BROADCOM_SDK=src-rt
+        # - TT_BUILD=rtn53    BROADCOM_SDK=src-rt
+        # - TT_BUILD=f9k       BROADCOM_SDK=src-rt
+        # - TT_BUILD=e2500     BROADCOM_SDK=src-rt
+        # - TT_BUILD=e3200     BROADCOM_SDK=src-rt
+        # - TT_BUILD=n6        BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60       BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr64    BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr64-vpn BROADCOM_SDK=src-rt
 
-        - TT_BUILD=v2e       BROADCOM_SDK=src-rt
-        - TT_BUILD=v2z       BROADCOM_SDK=src-rt
+        # - TT_BUILD=v2e       BROADCOM_SDK=src-rt
+        # - TT_BUILD=v2z       BROADCOM_SDK=src-rt
 
-        - TT_BUILD=r64e      BROADCOM_SDK=src-rt
-        - TT_BUILD=r64z      BROADCOM_SDK=src-rt
+        # - TT_BUILD=r64e      BROADCOM_SDK=src-rt
+        # - TT_BUILD=r64z      BROADCOM_SDK=src-rt
 
-        - TT_BUILD=ac66e       BROADCOM_SDK=src-rt
-        - TT_BUILD=ac66z       BROADCOM_SDK=src-rt
-        - TT_BUILD=w1800re     BROADCOM_SDK=src-rt
-        - TT_BUILD=w1800rz     BROADCOM_SDK=src-rt
-        - TT_BUILD=r6300e      BROADCOM_SDK=src-rt
-        - TT_BUILD=r6300z      BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr4500e   BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr4500z   BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr4500v2e BROADCOM_SDK=src-rt
-        - TT_BUILD=wndr4500v2z BROADCOM_SDK=src-rt
-        - TT_BUILD=n80o        BROADCOM_SDK=src-rt
+        # - TT_BUILD=ac66e       BROADCOM_SDK=src-rt
+        # - TT_BUILD=ac66z       BROADCOM_SDK=src-rt
+        # - TT_BUILD=w1800re     BROADCOM_SDK=src-rt
+        # - TT_BUILD=w1800rz     BROADCOM_SDK=src-rt
+        # - TT_BUILD=r6300e      BROADCOM_SDK=src-rt
+        # - TT_BUILD=r6300z      BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr4500e   BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr4500z   BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr4500v2e BROADCOM_SDK=src-rt
+        # - TT_BUILD=wndr4500v2z BROADCOM_SDK=src-rt
+        # - TT_BUILD=n80o        BROADCOM_SDK=src-rt
 
 
         # # include:

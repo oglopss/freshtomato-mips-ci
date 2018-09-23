@@ -365,6 +365,7 @@ build_tomato()
     cd ~/freshtomato-mips/release/$BROADCOM_SDK
     
     # cp -f router/mysql/configure router/mysql/configure.mipsel
+    cp -f router/mysql/configure.mipsel router/mysql/configure
     
     chmod 777 router/mysql/configure.mipsel
 
