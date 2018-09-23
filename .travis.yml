@@ -93,13 +93,13 @@ env:
         # - BROADCOM_SDK=6
 
         - TT_BUILD=r2e       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2c       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2d       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2g       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2u       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2c       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2d       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2g       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2u       BROADCOM_SDK=src-rt
         - TT_BUILD=r2t       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2b       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2o       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2b       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2o       BROADCOM_SDK=src-rt
         - TT_BUILD=r2z       BROADCOM_SDK=src-rt
         - TT_BUILD=r2a       BROADCOM_SDK=src-rt
         - TT_BUILD=r2v       BROADCOM_SDK=src-rt
