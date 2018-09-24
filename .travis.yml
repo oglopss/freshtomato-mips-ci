@@ -196,8 +196,8 @@ script:
     - sudo apt-get remove uuid-dev
     - . $TRAVIS_BUILD_DIR/.travis.sh      # Load the travis environment
     - echo ============================
-    - pre_build_prep # > /dev/null
-    - build_tomato
+    - pre_build_prep  > /dev/null
+    - build_tomato  > /dev/null
 
 # On failure displaying the last lines of the log file
 after_failure:
