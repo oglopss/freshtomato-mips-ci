@@ -16,10 +16,10 @@
   git config --global user.name "Travis"
   
   echo ===== about to clone ctng-ss-jekyll ===============
-  echo 
-  x=$[ ( $RANDOM % 25 )  + 10 ]s
-  echo sleeping $x
-  sleep $x
+  # echo 
+  # x=$[ ( $RANDOM % 25 )  + 10 ]s
+  # echo sleeping $x
+  # sleep $x
   
   #using token clone gh-pages branch
   git clone --depth 1 --quiet --branch=gh-pages https://${GH_TOKEN}@github.com/oglopss/freshtomato-mips-ci-jekyll.git  gh-pages-$TT_BUILD > /dev/null
