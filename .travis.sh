@@ -379,7 +379,7 @@ build_tomato()
     elif [ "$TT_BUILD" == "hg32064k" ] || [ "$TT_BUILD" == "hg32032k" ]; then
         make V1=RT-N5x-CN- V2=-140-hg320  $TT_BUILD > /dev/null &
     else
-        make V1=RT-N5x-CN- V2=-140 $TT_BUILD > /dev/null  &
+        make V1=RT-N5x-CN- V2=-2018.4 $TT_BUILD -j 4 > /dev/null  &
     fi
     
     local build_pid=$!
