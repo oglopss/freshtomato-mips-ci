@@ -257,7 +257,7 @@ wget http://downloads.sourceforge.net/project/libuuid/libuuid-1.0.3.tar.gz
 tar xf libuuid-1.0.3.tar.gz
 cd libuuid-1.0.3
 # sh configure --prefix /usr
-CC=arm-brcm-linux-uclibcgnueabi-gcc CXX=arm-brcm-linux-uclibcgnueabi-g++ AR=arm-brcm-linux-uclibcgnueabi-ar RANLIB=/opt/brcm/hndtools-arm-linux-2.6.36-uclibc-4.5.3/bin/arm-brcm-linux-uclibcgnueabi-ranlib ./configure --host=arm-brcm-linux-uclibcgnueabi --prefix=$HOME/uuid-install
+CC=mipsel-linux-uclibcgnueabi-gcc CXX=mipsel-linux-uclibcgnueabi-g++ AR=mipsel-linux-uclibcgnueabi-ar RANLIB=/opt/brcm/hndtools-mipsel-linux/bin/mipsel-linux-uclibcgnueabi-ranlib ./configure --host=mipsel-linux-uclibcgnueabi --prefix=$HOME/uuid-install
 
 # CC=mipsel-uclibc-gcc CXX=mipsel-uclibc-g++ AR=mipsel-uclibc-ar RANLIB=/opt/brcm/hndtools-mipsel-uclibc/bin/mipsel-uclibc-ranlib ./configure --host=mipsel-uclibc-linux --prefix=$HOME/uuid-install
 make
