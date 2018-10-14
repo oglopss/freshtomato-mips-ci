@@ -162,7 +162,7 @@ make
 sudo  make install
 
 
-
+# install this for local docker
 # cd ~
 # wget http://gnu.mirror.globo.tech/libtool/libtool-2.4.2.tar.gz
 # tar xvf libtool-2.4.2.tar.gz
