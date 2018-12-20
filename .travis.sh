@@ -41,14 +41,14 @@ sudo pip install requests -U
 
 # 2018.4-real seems to be mips-RT-AC
 # git clone --depth 1 -b 2018.4-real https://oglop@bitbucket.org/oglop/freshtomato-mips.git
-git clone --depth 1 -b q3 https://oglop@bitbucket.org/oglop/freshtomato-mips.git
+git clone --depth 1 -b q3-2018.5 https://oglop@bitbucket.org/oglop/freshtomato-mips.git
 
 # on real travis do not run this
 # rm ~/freshtomato-mips/release/$BROADCOM_SDK/router/patches/mysql/202-fix-cross-compiling2.patch
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b v2018.4 https://github.com/oglops/freshtomato-mips-gui.git
+git clone --depth 1 -b v2018.5 https://github.com/oglops/freshtomato-mips-gui.git
 
 # sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
