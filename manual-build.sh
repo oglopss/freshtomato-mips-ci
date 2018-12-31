@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-export BROADCOM_SDK=src-rt-6.x.4708
+export BROADCOM_SDK=src-rt
 export GH_TOKEN=NOTSET
 
 if [ -z $1 ]; then
-  BUILDS="r64z,1 n18z,2 r7000z,3 r6400z,5 ws880z,11 wzr1750z,12 ea6700z,13"
+  BUILDS="z,9 r2z,24 n60z,38"
 else
   BUILDS=$1,1
 fi
@@ -27,19 +27,19 @@ for i in $BUILDS; do
 
   echo current dir: `pwd`
 
-  . ~/freshTomato-ARM-ci/.travis.sh
+  . ~/freshtomato-mips-ci/.travis.sh
 
   # pre_build_prep
 
-  cd ~/tomato-arm-kille72/release/$BROADCOM_SDK
+  cd ~/freshtomato-mips/release/$BROADCOM_SDK
 
   build_tomato
 
-  cd ~/tomato-arm-kille72/release/$BROADCOM_SDK
+  cd ~/freshtomato-mips/release/$BROADCOM_SDK
 
   # only upload to my repo if manual argument is passed
   if [ "GH_TOKEN" != "NOTSET" ]; then
-    . ~/freshTomato-ARM-ci/update-gh-pages.sh manual
+    . ~/freshtomato-mips/update-gh-pages.sh manual
   fi
 
   # break

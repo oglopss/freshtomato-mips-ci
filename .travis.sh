@@ -48,7 +48,7 @@ git clone --depth 1 -b q3-2018.5 https://oglop@bitbucket.org/oglop/freshtomato-m
 
 # because I need to revert an old commit, I have to check out the whole history
 # git clone -b travis https://github.com/oglops/tomato.git
-git clone --depth 1 -b v2018.5 https://github.com/oglops/freshtomato-mips-gui.git
+git clone --depth 1 -b 2018.5 https://github.com/oglops/freshtomato-mips-gui.git
 
 # sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
