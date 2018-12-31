@@ -21,7 +21,7 @@ for i in $BUILDS; do
   export TT_BUILD=$KEY
   export TRAVIS_JOB_NUMBER=$VAL
 
-  cd ~/tomato-arm-kille72
+  cd ~/freshtomato-mips
   git clean -xfd
   git checkout .
 
