@@ -39,7 +39,7 @@ for i in $BUILDS; do
 
   # only upload to my repo if manual argument is passed
   if [ "GH_TOKEN" != "NOTSET" ]; then
-    . ~/freshtomato-mips/update-gh-pages.sh manual
+    . ~/freshtomato-mips-ci/update-gh-pages.sh manual
   fi
 
   # break
