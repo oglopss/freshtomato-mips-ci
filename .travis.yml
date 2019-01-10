@@ -92,51 +92,51 @@ env:
         # - export PATH=$HOME/x-tools/mipsel-unknown-linux-uclibc/bin:$PATH
         # - BROADCOM_SDK=6
 
-        - TT_BUILD=e      BROADCOM_SDK=src-rt
-        - TT_BUILD=c      BROADCOM_SDK=src-rt
-        - TT_BUILD=d      BROADCOM_SDK=src-rt
-        - TT_BUILD=g      BROADCOM_SDK=src-rt
-        - TT_BUILD=u      BROADCOM_SDK=src-rt
-        - TT_BUILD=t      BROADCOM_SDK=src-rt
-        - TT_BUILD=b      BROADCOM_SDK=src-rt
-        - TT_BUILD=o      BROADCOM_SDK=src-rt
-        - TT_BUILD=z      BROADCOM_SDK=src-rt
-        - TT_BUILD=i      BROADCOM_SDK=src-rt
-        - TT_BUILD=j      BROADCOM_SDK=src-rt
-        - TT_BUILD=a      BROADCOM_SDK=src-rt
-        - TT_BUILD=f      BROADCOM_SDK=src-rt
-        - TT_BUILD=v      BROADCOM_SDK=src-rt
-        - TT_BUILD=m      BROADCOM_SDK=src-rt
+        # - TT_BUILD=e      BROADCOM_SDK=src-rt
+        # - TT_BUILD=c      BROADCOM_SDK=src-rt
+        # - TT_BUILD=d      BROADCOM_SDK=src-rt
+        # - TT_BUILD=g      BROADCOM_SDK=src-rt
+        # - TT_BUILD=u      BROADCOM_SDK=src-rt
+        # - TT_BUILD=t      BROADCOM_SDK=src-rt
+        # - TT_BUILD=b      BROADCOM_SDK=src-rt
+        # - TT_BUILD=o      BROADCOM_SDK=src-rt
+        # - TT_BUILD=z      BROADCOM_SDK=src-rt
+        # - TT_BUILD=i      BROADCOM_SDK=src-rt
+        # - TT_BUILD=j      BROADCOM_SDK=src-rt
+        # - TT_BUILD=a      BROADCOM_SDK=src-rt
+        # - TT_BUILD=f      BROADCOM_SDK=src-rt
+        # - TT_BUILD=v      BROADCOM_SDK=src-rt
+        # - TT_BUILD=m      BROADCOM_SDK=src-rt
 
 
-        - TT_BUILD=r2e       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2c       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2d       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2g       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2u       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2t       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2b       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2o       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2z       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2a       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2v       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2m       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2i       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2j       BROADCOM_SDK=src-rt
-        - TT_BUILD=r2f       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2e       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2c       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2d       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2g       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2u       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2t       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2b       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2o       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2z       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2a       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2v       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2m       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2i       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2j       BROADCOM_SDK=src-rt
+        # - TT_BUILD=r2f       BROADCOM_SDK=src-rt
 
-        - TT_BUILD=n60e      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60c      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60d      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60g      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60t      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60b      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60o      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60z      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60a      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60k      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60v      BROADCOM_SDK=src-rt
-        - TT_BUILD=n60m      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60e      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60c      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60d      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60g      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60t      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60b      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60o      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60z      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60a      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60k      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60v      BROADCOM_SDK=src-rt
+        # - TT_BUILD=n60m      BROADCOM_SDK=src-rt
 
         - TT_BUILD=r2q3m       BROADCOM_SDK=src-rt
         - TT_BUILD=r2q3v       BROADCOM_SDK=src-rt

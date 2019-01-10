@@ -53,7 +53,7 @@ git clone --depth 1 -b 2018.5 https://github.com/oglops/freshtomato-mips-gui.git
 # sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 sudo ln -s ~/freshtomato-mips/tools/brcm /opt/brcm
 
-rsync -rpv --ignore-times  ./freshTomato-mips-gui/*  ./freshtomato-mips/release/$BROADCOM_SDK/router/www/  --exclude .git
+# rsync -rpv --ignore-times  ./freshTomato-mips-gui/*  ./freshtomato-mips/release/$BROADCOM_SDK/router/www/  --exclude .git
 
 echo ========== bison ==========
 apt-cache showpkg bison
